@@ -11,29 +11,43 @@ Also ths printer is long out of support.
 
 one is an ATmega8u2 (USB pass through) Read via port 8u2 ICSP 8 pin header
 
-avrdude -c usbtiny -p m8u2 -P usb -b 5608 -U flash:r: "ATmega8u2-Flash.hex":i
-avrdude -c usbtiny -p m8u2 -P usb -b 5608 -U flash:r: "ATmega8u2-EEPROM.hex":i
+avrdude -c usbtiny -p m8u2 -P usb -b 5608 -U flash:r:"ATmega8u2-Flash.hex":i
 
-avrdude -c usbtiny -p m8u2 -P usb -b 5608 -U flash:r: "ATmega8u2-Flash.bin":r
-avrdude -c usbtiny -p m8u2 -P usb -b 5608 -U flash:r: "ATmega8u2-EEPROM.bin":r
+avrdude -c usbtiny -p m8u2 -P usb -b 5608 -U flash:r:"ATmega8u2-EEPROM.hex":i
+
+avrdude -c usbtiny -p m8u2 -P usb -b 5608 -U flash:r:"ATmega8u2-Flash.bin":r
+
+avrdude -c usbtiny -p m8u2 -P usb -b 5608 -U flash:r:"ATmega8u2-EEPROM.bin":r
 
 Fuses and lock bit read as:
+
 lfuse: 0xFF
+
 hfuse: 0xD9
+
 efuse: 0xF4
+
 Lock bits: 0xCF
+
+
 
 
 The main chip is an ATmega2560 Read via 1280 ICSP 8 pin header
 
-avrdude -c usbtiny -p m2560 -P usb -b 5600 -U flash:r: "ATmega2560-Flash.hex":i
-avrdude -c usbtiny -p m2560 -P usb -b 5600 -U flash:r: "ATmega2560-EEPROM.hex":i
+avrdude -c usbtiny -p m2560 -P usb -b 5600 -U flash:r:"ATmega2560-Flash.hex":i
 
-avrdude -c usbtiny -p m2560 -P usb -b 5600 -U flash:r: "ATmega2560-Flash.bin":r
-avrdude -c usbtiny -p m2560 -P usb -b 5600 -U flash:r: "ATmega2560-EEPROM.bin":r
+avrdude -c usbtiny -p m2560 -P usb -b 5600 -U flash:r:"ATmega2560-EEPROM.hex":i
+
+avrdude -c usbtiny -p m2560 -P usb -b 5600 -U flash:r:"ATmega2560-Flash.bin":r
+
+avrdude -c usbtiny -p m2560 -P usb -b 5600 -U flash:r:"ATmega2560-EEPROM.bin":r
 
 Fuses and lock bit read as:
+
 lfuse: 0xFF
+
 hfuse: 0xD8
+
 efuse: 0xFD
+
 Lock bits: 0xCF
