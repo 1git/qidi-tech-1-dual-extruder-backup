@@ -1,8 +1,11 @@
 # qidi-tech-1-dual-extruder-backup
 Backups from my qidi tech one dual extruder
 Detail:
+
 https://www.thingiverse.com/groups/qidi-tech-i
+
 https://top3dshop.com/blog/qidi-tech-1-3d-printer-review
+
 
 This is a Replicator Makerbot dual extruder clone.
 The mainboard has 2 Atmel chips on it 
